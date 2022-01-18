@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "532226468860",
+    "project_id": "prshop-f21e3",
+    "storage_bucket": "prshop-f21e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532226468860:android:2dea7a0e46c5ef9f392079",
+        "android_client_info": {
+          "package_name": "com.example.eshopee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532226468860-i21l357a7d6tfq17ndvqsv6pnpu7pp3j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eshopee",
+            "certificate_hash": "15229067429420a11f3d2720a10afa2938c4c89e"
+          }
+        },
+        {
+          "client_id": "532226468860-7n85n2bl160phv46rbea9m16q1b1n2nt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChc-g0lXKc59N5j6k0ZUZi2nJ0dj9JE0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532226468860-7n85n2bl160phv46rbea9m16q1b1n2nt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
