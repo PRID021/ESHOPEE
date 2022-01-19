@@ -1,0 +1,6 @@
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/launcher_icon/PRShop_Icon.png"
+  adaptive_icon_background: "assets/icons/launcher_icon/PRShop_Icon.png"
+  adaptive_icon_foreground: "assets/icons/launcher_icon/PRShop_Icon.png"

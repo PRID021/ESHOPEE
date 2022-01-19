@@ -1,0 +1,8 @@
+[![BCH compliance](https://bettercodehub.com/edge/badge/PRID021/ESHOPEE?branch=dev)](https://bettercodehub.com/)
+<img src='https://bettercodehub.com/edge/badge/PRID021/ESHOPEE?branch=dev'>
+component_depth: 1
+default_excludes: true
+languages:
+- kotlin
+- objectivec
+- swift
