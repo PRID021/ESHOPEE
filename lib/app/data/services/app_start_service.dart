@@ -9,7 +9,7 @@ class AppStartService {
   static final AppStartService instance = AppStartService._privateConstructor();
   initFirebase() async {
     if (kIsWeb) {
-      final String response = await rootBundle.loadString('assets/config/setting.json');
+      final String response = await rootBundle.loadString('config/setting.json');
       final dataConfig = await json.decode(response);
       await Firebase.initializeApp(
         options: FirebaseOptions(
