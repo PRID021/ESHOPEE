@@ -10,7 +10,7 @@ class SplashController extends GetxController {
     WidgetsFlutterBinding.ensureInitialized();
     await AppStartService.instance.initGetStorage();
     await AppStartService.instance.initFirebase();
-    Future.delayed(const Duration(seconds: 10), () {
+    Future.delayed(const Duration(seconds: 5), () {
       Get.offAllNamed(Routes.login);
     });
   }

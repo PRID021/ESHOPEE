@@ -9,17 +9,52 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/services.dart';
 
+class $AssetsConfigGen {
+  const $AssetsConfigGen();
+
+  /// File path: assets/config/setting.json
+  String get setting => 'assets/config/setting.json';
+}
+
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
   /// File path: assets/images/PRShop.svg
   SvgGenImage get pRShop => const SvgGenImage('assets/images/PRShop.svg');
+
+  /// File path: assets/images/facebook.svg
+  SvgGenImage get facebook => const SvgGenImage('assets/images/facebook.svg');
+
+  /// File path: assets/images/google.svg
+  SvgGenImage get google => const SvgGenImage('assets/images/google.svg');
+
+  /// File path: assets/images/loading.gif
   AssetGenImage get loading => const AssetGenImage('assets/images/loading.gif');
+
+  /// File path: assets/images/prshop_ad1.svg
+  SvgGenImage get prshopAd1 =>
+      const SvgGenImage('assets/images/prshop_ad1.svg');
+
+  /// File path: assets/images/prshop_adv.svg
+  SvgGenImage get prshopAdv =>
+      const SvgGenImage('assets/images/prshop_adv.svg');
+
+  /// File path: assets/images/prshop_icon.svg
+  SvgGenImage get prshopIcon =>
+      const SvgGenImage('assets/images/prshop_icon.svg');
+
+  /// File path: assets/images/prshop_icon_v2.svg
+  SvgGenImage get prshopIconV2 =>
+      const SvgGenImage('assets/images/prshop_icon_v2.svg');
+
+  /// File path: assets/images/shopping.svg
+  SvgGenImage get shopping => const SvgGenImage('assets/images/shopping.svg');
 }
 
 class Assets {
   Assets._();
 
+  static const $AssetsConfigGen config = $AssetsConfigGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 

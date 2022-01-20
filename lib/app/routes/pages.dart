@@ -14,7 +14,7 @@ abstract class AppPages {
     ),
     GetPage(
       name: Routes.login,
-      page: () => LoginScreen(),
+      page: () => const LoginScreen(),
       binding: LoginBinding(),
     ),
   ];
