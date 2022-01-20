@@ -19,15 +19,12 @@ class AppStartService {
           projectId: dataConfig['firebaseWebAppConfig']['projectId'],
         ),
       );
-      print('Firebase initialized for web');
     } else {
       await Firebase.initializeApp();
-      print('Firebase initialized for iOS/Android');
     }
   }
 
   initGetStorage() async {
     GetStorage.init();
-    print('Storage initialized..!');
   }
 }
