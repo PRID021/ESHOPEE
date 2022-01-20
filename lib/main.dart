@@ -1,15 +1,13 @@
 import 'package:eshopee/app/routes/pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'app/data/services/app_start_service.dart';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await AppStartService.instance.initGetStorage();
-  runApp(PRSHOP());
+void main() {
+  runApp(const PRSHOP());
 }
 
 class PRSHOP extends StatelessWidget {
+  const PRSHOP({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
