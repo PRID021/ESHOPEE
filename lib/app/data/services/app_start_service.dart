@@ -1,8 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
+
 import 'package:flutter/services.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:convert';
+
 
 class AppStartService {
   AppStartService._privateConstructor();
@@ -22,10 +24,9 @@ class AppStartService {
     } else {
       await Firebase.initializeApp();
     }
-
     print('Firebase initialized..!');
   }
-
+  
   initGetStorage() async {
     GetStorage.init();
     print('Storage initialized..!');

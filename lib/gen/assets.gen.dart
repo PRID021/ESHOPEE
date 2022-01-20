@@ -14,8 +14,6 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/PRShop.svg
   SvgGenImage get pRShop => const SvgGenImage('assets/images/PRShop.svg');
-
-  /// File path: assets/images/loading.gif
   AssetGenImage get loading => const AssetGenImage('assets/images/loading.gif');
 }
 

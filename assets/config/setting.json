@@ -1,0 +1,10 @@
+{
+    "firebaseWebAppConfig": {
+        "apiKey": "AIzaSyDjWE3y4PIxck2y3sId-UgZprCg4nb25Hs",
+        "authDomain": "prshop-f21e3.firebaseapp.com",
+        "projectId": "prshop-f21e3",
+        "storageBucket": "prshop-f21e3.appspot.com",
+        "messagingSenderId": "532226468860",
+        "appId": "1:532226468860:web:7da7326a1195292a392079"
+    }
+}
