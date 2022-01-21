@@ -1,10 +1,13 @@
 import 'package:eshopee/app/constant/colors/color_constraints.dart';
 import 'package:eshopee/app/core/utils/size_helper.dart';
+import 'package:eshopee/app/modules/splash/spash_controller.dart';
 import 'package:eshopee/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  SplashScreen({Key? key}) : super(key: key);
+  final SplashController controller = Get.find<SplashController>();
   @override
   Widget build(BuildContext context) {
     return Material(

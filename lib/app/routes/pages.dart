@@ -9,7 +9,7 @@ abstract class AppPages {
   static final List<GetPage> pages = [
     GetPage(
       name: Routes.splash,
-      page: () => const SplashScreen(),
+      page: () => SplashScreen(),
       binding: SplashBinding(),
     ),
     GetPage(
