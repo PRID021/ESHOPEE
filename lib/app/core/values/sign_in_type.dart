@@ -1,0 +1,4 @@
+enum SignInType {
+  google,
+  facebook,
+}

@@ -45,6 +45,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   sizer: ^2.0.15
   google_fonts: ^2.2.0
+  google_sign_in: ^5.2.3
+  cloud_firestore: ^3.1.6
+  enum_to_string: ^2.0.1
 
 dev_dependencies:
   flutter_test:

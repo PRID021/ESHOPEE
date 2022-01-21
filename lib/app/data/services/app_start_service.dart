@@ -11,10 +11,10 @@ class AppStartService {
       await Firebase.initializeApp(
         options: ConfigReader.firebaseOptionsForWebApp,
       );
-      print('Firebase initialized for web');
+      // print('Firebase initialized for web');
     } else {
       await Firebase.initializeApp();
-      print('Firebase initialized for IOS/Android');
+      // print('Firebase initialized for IOS/Android');
     }
   }
 

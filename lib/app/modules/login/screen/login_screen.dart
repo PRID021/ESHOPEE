@@ -1,13 +1,16 @@
 import 'package:eshopee/app/constant/colors/color_constraints.dart';
 import 'package:eshopee/app/core/utils/size_helper.dart';
+import 'package:eshopee/app/core/values/sign_in_type.dart';
+import 'package:eshopee/app/modules/login/login_controller.dart';
 import 'package:eshopee/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../widgets/login_button.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
-
+  LoginScreen({Key? key}) : super(key: key);
+  LoginController _controller = Get.find<LoginController>();
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -50,7 +53,9 @@ class LoginScreen extends StatelessWidget {
               ),
               LoginButton(
                 title: 'Continue with Gogole',
-                onPressed: () {},
+                onPressed: () async {
+                  await _controller.handleSignIn(SignInType.google);
+                },
                 iconImage: Assets.images.google,
               ),
             ],

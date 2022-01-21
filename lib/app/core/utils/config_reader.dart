@@ -18,4 +18,6 @@ abstract class ConfigReader {
       projectId: _config!['firebaseWebAppConfig']['projectId'],
     );
   }
+
+  static String get dbType => _config!['dbType'];
 }
