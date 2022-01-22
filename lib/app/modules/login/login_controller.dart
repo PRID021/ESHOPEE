@@ -2,6 +2,7 @@ import 'package:eshopee/app/core/values/sign_in_type.dart';
 import 'package:eshopee/app/data/models/prshop_user.dart';
 import 'package:eshopee/app/data/providers/user_provider.dart';
 import 'package:eshopee/app/data/services/auth_service.dart';
+import 'package:eshopee/app/routes/pages.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 
@@ -9,16 +10,17 @@ class LoginController extends GetxController {
   RxBool isLoginProcessing = false.obs;
   final UserProvider _userProvider = UserProvider.instance;
   handleSignIn(SignInType signInType) async {
+    UserCredential? userCredential;
     try {
-      isLoginProcessing.value = true;
-      UserCredential? userCredential = await _signIn(signInType);
+      _onStartLoading();
+      userCredential = await _signIn(signInType);
       if (userCredential != null) {
         await _onSignInSuccess(userCredential);
       } else {
         //await _onSignInFail();
       }
     } finally {
-      isLoginProcessing.value = false;
+      _onFinishLoading(userCredential);
     }
   }
 
@@ -52,5 +54,23 @@ class LoginController extends GetxController {
       address: 'not set',
     );
     await _userProvider.add(prshopUser);
+  }
+
+  void _onFinishLoading(UserCredential? userCredential) {
+    isLoginProcessing.value = false;
+    _navigatingToSuitableScreen(userCredential);
+  }
+
+  void _onStartLoading() => isLoginProcessing.value = true;
+
+  void _navigatingToSuitableScreen(UserCredential? userCredential) {
+    switch (userCredential) {
+      case null:
+        Get.offAllNamed(Routes.splash);
+        break;
+      default:
+        Get.offAllNamed(Routes.home);
+        break;
+    }
   }
 }

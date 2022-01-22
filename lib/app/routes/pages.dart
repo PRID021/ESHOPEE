@@ -1,3 +1,5 @@
+import 'package:eshopee/app/modules/home/home_binding.dart';
+import 'package:eshopee/app/modules/home/screen/home_screen.dart';
 import 'package:get/get.dart';
 import '../modules/login/login_binding.dart';
 import '../modules/login/screen/login_screen.dart';
@@ -16,6 +18,11 @@ abstract class AppPages {
       name: Routes.login,
       page: () => LoginScreen(),
       binding: LoginBinding(),
+    ),
+    GetPage(
+      name: Routes.home,
+      page: () => const HomeScreen(),
+      binding: HomeBinding(),
     ),
   ];
 }

@@ -16,8 +16,7 @@ class UserProvider implements Firestoration<String, PRShopUser> {
   }
 
   @override
-  // TODO: implement collectionPath
-  String get collectionPath => throw UnimplementedError();
+  String get collectionPath => ConfigReader.dbUsrCollection;
 
   @override
   Future<PRShopUser> delete(String id) {
@@ -38,9 +37,8 @@ class UserProvider implements Firestoration<String, PRShopUser> {
   }
 
   Future<bool> isExists(String id) async {
-    DB_TYPE? dbType = EnumToString.fromString(DB_TYPE.values, ConfigReader.dbType);
-    switch (dbType) {
-      case DB_TYPE.firestore:
+    switch (ConfigReader.dbType) {
+      case DB_TYPE.firebase:
         var doc = await FirebaseFirestore.instance.collection(collectionPath).doc(id).get();
         return doc.exists;
       default:

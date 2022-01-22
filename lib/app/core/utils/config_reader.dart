@@ -1,4 +1,6 @@
 import 'dart:convert';
+import 'package:enum_to_string/enum_to_string.dart';
+import 'package:eshopee/app/core/values/db_type.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/services.dart';
 
@@ -19,5 +21,6 @@ abstract class ConfigReader {
     );
   }
 
-  static String get dbType => _config!['dbType'];
+  static DB_TYPE? get dbType => EnumToString.fromString(DB_TYPE.values, _config!['dbType']['type']);
+  static String get dbUsrCollection => _config!['dbType']['dbUsrCollection'];
 }

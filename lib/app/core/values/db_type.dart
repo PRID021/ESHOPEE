@@ -1,1 +1,1 @@
-enum DB_TYPE { firestore, localstorage }
+enum DB_TYPE { firebase, localstorage }
