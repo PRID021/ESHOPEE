@@ -14,7 +14,8 @@ class PRSHOP extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       getPages: AppPages.pages,
       defaultTransition: Transition.cupertino,
-      initialRoute: Routes.splash,
+      // initialRoute: Routes.splash,
+      initialRoute: Routes.wellCome,
     );
   }
 }

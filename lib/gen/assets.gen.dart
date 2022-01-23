@@ -49,6 +49,18 @@ class $AssetsImagesGen {
 
   /// File path: assets/images/shopping.svg
   SvgGenImage get shopping => const SvgGenImage('assets/images/shopping.svg');
+
+  /// File path: assets/images/wellcome_1.svg
+  SvgGenImage get wellcome1 =>
+      const SvgGenImage('assets/images/wellcome_1.svg');
+
+  /// File path: assets/images/wellcome_2.svg
+  SvgGenImage get wellcome2 =>
+      const SvgGenImage('assets/images/wellcome_2.svg');
+
+  /// File path: assets/images/wellcome_3.svg
+  SvgGenImage get wellcome3 =>
+      const SvgGenImage('assets/images/wellcome_3.svg');
 }
 
 class Assets {

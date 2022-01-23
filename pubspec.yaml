@@ -48,6 +48,7 @@ dependencies:
   google_sign_in: ^5.2.3
   cloud_firestore: ^3.1.6
   enum_to_string: ^2.0.1
+  introduction_screen: ^2.1.0
 
 dev_dependencies:
   flutter_test:

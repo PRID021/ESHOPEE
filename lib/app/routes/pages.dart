@@ -1,5 +1,7 @@
 import 'package:eshopee/app/modules/home/home_binding.dart';
 import 'package:eshopee/app/modules/home/screen/home_screen.dart';
+import 'package:eshopee/app/modules/wellcome/screen/wellcome_screen.dart';
+import 'package:eshopee/app/modules/wellcome/welllcome_binding.dart';
 import 'package:get/get.dart';
 import '../modules/login/login_binding.dart';
 import '../modules/login/screen/login_screen.dart';
@@ -13,6 +15,11 @@ abstract class AppPages {
       name: Routes.splash,
       page: () => SplashScreen(),
       binding: SplashBinding(),
+    ),
+    GetPage(
+      name: Routes.wellCome,
+      page: () => const WellcomeScreen(),
+      binding: WellcomeBinding(),
     ),
     GetPage(
       name: Routes.login,
