@@ -16,5 +16,6 @@ Future<void> mainCommon(String env) async {
       //ConfigReader.setEnv('prod');
       break;
   }
+
   runApp(const PRSHOP());
 }

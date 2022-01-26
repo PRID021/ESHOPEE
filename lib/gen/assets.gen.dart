@@ -16,11 +16,37 @@ class $AssetsConfigGen {
   String get setting => 'assets/config/setting.json';
 }
 
+class $AssetsIconsGen {
+  const $AssetsIconsGen();
+
+  /// File path: assets/icons/arrow_back.svg
+  SvgGenImage get arrowBack => const SvgGenImage('assets/icons/arrow_back.svg');
+
+  /// File path: assets/icons/arrow_down.svg
+  SvgGenImage get arrowDown => const SvgGenImage('assets/icons/arrow_down.svg');
+
+  /// File path: assets/icons/cart.svg
+  SvgGenImage get cart => const SvgGenImage('assets/icons/cart.svg');
+
+  /// File path: assets/icons/sales.svg
+  SvgGenImage get sales => const SvgGenImage('assets/icons/sales.svg');
+
+  /// File path: assets/icons/setting.svg
+  SvgGenImage get setting => const SvgGenImage('assets/icons/setting.svg');
+
+  /// File path: assets/icons/stars.svg
+  SvgGenImage get stars => const SvgGenImage('assets/icons/stars.svg');
+}
+
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
   /// File path: assets/images/PRShop.svg
   SvgGenImage get pRShop => const SvgGenImage('assets/images/PRShop.svg');
+
+  /// File path: assets/images/circle_loading.gif
+  AssetGenImage get circleLoading =>
+      const AssetGenImage('assets/images/circle_loading.gif');
 
   /// File path: assets/images/facebook.svg
   SvgGenImage get facebook => const SvgGenImage('assets/images/facebook.svg');
@@ -67,6 +93,7 @@ class Assets {
   Assets._();
 
   static const $AssetsConfigGen config = $AssetsConfigGen();
+  static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 

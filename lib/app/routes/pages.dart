@@ -1,5 +1,7 @@
 import 'package:eshopee/app/modules/home/home_binding.dart';
 import 'package:eshopee/app/modules/home/screen/home_screen.dart';
+import 'package:eshopee/app/modules/product_detail/product_detail_binding.dart';
+import 'package:eshopee/app/modules/product_detail/screen/product_screen.dart';
 import 'package:eshopee/app/modules/wellcome/screen/wellcome_screen.dart';
 import 'package:eshopee/app/modules/wellcome/welllcome_binding.dart';
 import 'package:get/get.dart';
@@ -30,6 +32,11 @@ abstract class AppPages {
       name: Routes.home,
       page: () => const HomeScreen(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: Routes.productDetail,
+      page: () => ProductDetailScreen(),
+      binding: ProductDetailtBinding(),
     ),
   ];
 }
