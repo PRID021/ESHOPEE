@@ -18,6 +18,7 @@ class ProductDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kBackgroundColor,
       body: SafeArea(
         child: Container(
           color: kBackgroundColor,
@@ -42,9 +43,7 @@ class ProductDetailScreen extends StatelessWidget {
                                 child: Material(
                                   color: Colors.transparent,
                                   child: InkWell(
-                                    onTap: () {
-                                      print('back');
-                                    },
+                                    onTap: () {},
                                   ),
                                 ),
                               ),
@@ -177,14 +176,12 @@ class ProductDetailScreen extends StatelessWidget {
                                 fontWeight: FontWeight.w300,
                                 color: kPrimaryTextColor,
                               )),
-                          Spacer(),
+                          const Spacer(),
                           Container(
                             margin: const EdgeInsets.fromLTRB(8, 0, 0, 0),
                             child: TextHighLightButton(
-                              title: 'Add to cart',
-                              onPressed: () {
-                                print('add to cart');
-                              },
+                              title: 'ADD TO CART',
+                              onPressed: () {},
                               backgroundColor: kBackgroundHighLightColor,
                               textColor: kPrimaryTextColor,
                             ),
@@ -192,10 +189,8 @@ class ProductDetailScreen extends StatelessWidget {
                           Container(
                             margin: const EdgeInsets.fromLTRB(8, 0, 0, 0),
                             child: TextHighLightButton(
-                              title: 'Add to cart',
-                              onPressed: () {
-                                print('add to cart');
-                              },
+                              title: 'SHOP NOW',
+                              onPressed: () {},
                               backgroundColor: kPrimaryTextColor,
                               textColor: kBackgroundHighLightColor,
                             ),

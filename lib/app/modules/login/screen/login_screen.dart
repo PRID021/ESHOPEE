@@ -10,7 +10,7 @@ import '../widgets/login_button.dart';
 
 class LoginScreen extends StatelessWidget {
   LoginScreen({Key? key}) : super(key: key);
-  LoginController _controller = Get.find<LoginController>();
+  final LoginController _controller = Get.find<LoginController>();
   @override
   Widget build(BuildContext context) {
     return Material(

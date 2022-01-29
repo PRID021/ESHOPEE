@@ -4,7 +4,6 @@ import 'package:eshopee/app/modules/wellcome/widget/high_ligh_button.dart';
 import 'package:eshopee/app/modules/wellcome/widget/splash_content.dart';
 import 'package:eshopee/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class WellcomeScreen extends StatefulWidget {
   const WellcomeScreen({Key? key}) : super(key: key);
@@ -83,9 +82,7 @@ class _WellcomeScreenState extends State<WellcomeScreen> {
                     visible: cuurentPageIndex == 2,
                     child: HighLightButton(
                       title: 'Let\'s Start',
-                      onPressed: () {
-                        print('object');
-                      },
+                      onPressed: () {},
                     )),
                 Visibility(
                   visible: cuurentPageIndex != 2,

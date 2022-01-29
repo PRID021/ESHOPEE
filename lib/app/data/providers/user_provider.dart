@@ -1,4 +1,3 @@
-import 'package:enum_to_string/enum_to_string.dart';
 import 'package:eshopee/app/core/utils/config_reader.dart';
 import 'package:eshopee/app/core/values/db_type.dart';
 import 'package:eshopee/app/data/models/firestoration.dart';
@@ -20,19 +19,16 @@ class UserProvider implements Firestoration<String, PRShopUser> {
 
   @override
   Future<PRShopUser> delete(String id) {
-    // TODO: implement delete
     throw UnimplementedError();
   }
 
   @override
   Future<PRShopUser> fetch(String id) {
-    // TODO: implement fetch
     throw UnimplementedError();
   }
 
   @override
   Future<PRShopUser> update(String id, PRShopUser obj) {
-    // TODO: implement update
     throw UnimplementedError();
   }
 

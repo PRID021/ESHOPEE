@@ -40,7 +40,7 @@ class SplashContent extends StatelessWidget {
         SizedBox(
           height: SizeHelper.getHeight(context, 24),
         ),
-        Container(
+        SizedBox(
           width: SizeHelper.getWidth(context, 268),
           child: Text(
             subTitle,

@@ -1,5 +1,4 @@
 import 'package:eshopee/app/constant/colors/color_constraints.dart';
-import 'package:eshopee/app/modules/product_detail/product_detail_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -64,7 +63,7 @@ class DropDownMenu extends StatelessWidget {
                     textAlign: TextAlign.center),
               );
             }).toList(),
-            onChanged: (dynamic? newValue) {
+            onChanged: (dynamic newValue) {
               selectedValue.value = newValue!;
             },
           ),

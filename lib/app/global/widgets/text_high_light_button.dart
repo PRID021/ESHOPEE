@@ -1,4 +1,3 @@
-import 'package:eshopee/app/constant/colors/color_constraints.dart';
 import 'package:eshopee/app/core/utils/size_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
